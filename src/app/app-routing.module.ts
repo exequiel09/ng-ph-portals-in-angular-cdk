@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { BaseOneComponent } from './plain-dynamic-component-creation/base-one/base-one.component';
 import { BaseTwoComponent } from './portal-dynamic-component-creation/base-two/base-two.component';
+import { BaseThreeComponent } from './plain-dynamic-template-creation/base-three/base-three.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,11 @@ const routes: Routes = [
   {
     path: 'portal-dynamic-component-creation',
     component: BaseTwoComponent,
+  },
+
+  {
+    path: 'plain-dynamic-template-creation',
+    component: BaseThreeComponent,
   },
 ];
 

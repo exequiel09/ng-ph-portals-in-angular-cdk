@@ -25,6 +25,11 @@ import { Component } from '@angular/core';
             Demo 2 (Portal - Component)
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/plain-dynamic-template-creation']" [routerLinkActive]="'active'">
+            Demo 3 (Plain - Template)
+          </a>
+        </li>
       </ul>
     </nav>
 
