@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BaseOneComponent } from './plain-dynamic-component-creation/base-one/base-one.component';
 import { BaseTwoComponent } from './portal-dynamic-component-creation/base-two/base-two.component';
 import { BaseThreeComponent } from './plain-dynamic-template-creation/base-three/base-three.component';
+import { BaseFourComponent } from './portal-dynamic-template-creation/base-four/base-four.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path: 'plain-dynamic-template-creation',
     component: BaseThreeComponent,
+  },
+
+  {
+    path: 'portal-dynamic-template-creation',
+    component: BaseFourComponent,
   },
 ];
 
