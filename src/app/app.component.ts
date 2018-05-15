@@ -16,8 +16,13 @@ import { Component } from '@angular/core';
     <nav class="subnav">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']" [routerLinkActive]="'active'">
+          <a class="nav-link" [routerLink]="['/plain-dynamic-component-creation']" [routerLinkActive]="'active'">
             Demo 1 (Plain - Component)
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/portal-dynamic-component-creation']" [routerLinkActive]="'active'">
+            Demo 2 (Portal - Component)
           </a>
         </li>
       </ul>
