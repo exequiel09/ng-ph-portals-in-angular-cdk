@@ -5,6 +5,7 @@ import { BaseOneComponent } from './plain-dynamic-component-creation/base-one/ba
 import { BaseTwoComponent } from './portal-dynamic-component-creation/base-two/base-two.component';
 import { BaseThreeComponent } from './plain-dynamic-template-creation/base-three/base-three.component';
 import { BaseFourComponent } from './portal-dynamic-template-creation/base-four/base-four.component';
+import { BaseFiveComponent } from './portal-directives/base-five/base-five.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,11 @@ const routes: Routes = [
   {
     path: 'portal-dynamic-template-creation',
     component: BaseFourComponent,
+  },
+
+  {
+    path: 'portal-directives',
+    component: BaseFiveComponent,
   },
 ];
 

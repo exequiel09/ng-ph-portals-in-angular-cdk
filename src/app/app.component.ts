@@ -35,6 +35,11 @@ import { Component } from '@angular/core';
             Demo 4 (Portal - Template)
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/portal-directives']" [routerLinkActive]="'active'">
+            Demo 5 (Portal Directives)
+          </a>
+        </li>
       </ul>
     </nav>
 
