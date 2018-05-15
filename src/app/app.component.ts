@@ -10,9 +10,18 @@ import { Component } from '@angular/core';
         </a>
       </div>
       <div class="header-nav">
-        <a href="#" class="active nav-link nav-text" (click)="false">Home</a>
+        <a href="#" class="active nav-link nav-text" [routerLink]="['/']">Home</a>
       </div>
     </header>
+    <nav class="subnav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']" [routerLinkActive]="'active'">
+            Demo 1 (Plain - Component)
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <router-outlet></router-outlet>
   `,
