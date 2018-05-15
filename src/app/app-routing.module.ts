@@ -7,6 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: BaseOneComponent,
+  },
+
+  {
+    path: 'plain-dynamic-component-creation',
+    component: BaseOneComponent,
   }
 ];
 
