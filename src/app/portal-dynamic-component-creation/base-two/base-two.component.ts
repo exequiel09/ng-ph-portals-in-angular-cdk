@@ -1,6 +1,6 @@
 import { ApplicationRef, Component, ComponentFactoryResolver, Inject, Injector, OnInit, OnDestroy } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { ComponentPortal, DomPortalHost, PortalOutlet } from '@angular/cdk/portal';
+import { ComponentPortal, DomPortalOutlet, PortalOutlet } from '@angular/cdk/portal';
 
 import { DummyTwoComponent } from '../dummy-two/dummy-two.component';
 
@@ -16,7 +16,7 @@ import { DummyTwoComponent } from '../dummy-two/dummy-two.component';
   `]
 })
 export class BaseTwoComponent implements OnInit, OnDestroy {
-  private _portalHost: DomPortalHost;
+  private _portalOutlet: PortalOutlet;
   private _portal: ComponentPortal<DummyTwoComponent>;
 
   constructor(
@@ -28,7 +28,7 @@ export class BaseTwoComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     // set the document.body as the portal host for the dynamic components
-    this._portalHost = new DomPortalHost(
+    this._portalOutlet = new DomPortalOutlet(
       this._doc.body,
       this._cfr,
       this._appRef,
@@ -39,7 +39,7 @@ export class BaseTwoComponent implements OnInit, OnDestroy {
     this._portal = new ComponentPortal(DummyTwoComponent);
 
     // attach the created component portal to the portal host
-    this._portal.attach(this._portalHost);
+    this._portal.attach(this._portalOutlet);
   }
 
   ngOnDestroy() {
