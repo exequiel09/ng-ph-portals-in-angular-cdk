@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { PortalDynamicComponentCreationModule } from './portal-dynamic-component-creation/portal-dynamic-component-creation.module';
 import { PlainDynamicComponentCreationModule } from './plain-dynamic-component-creation/plain-dynamic-component-creation.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { AppComponent } from './app.component';
 
     AppRoutingModule,
     PlainDynamicComponentCreationModule,
+    PortalDynamicComponentCreationModule,
   ],
   declarations: [
     AppComponent
