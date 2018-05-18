@@ -41,6 +41,9 @@ export class BaseOneComponent implements OnInit, OnDestroy {
     // create an instance of the component given the injector
     this.componentRef = componentFactory.create(this._injector);
 
+    // attach the component the ApplicationRef so dirty checking will be run on it
+    this._appRef.attachView(this.componentRef.hostView);
+
     // get the DOM element from the component
     const componentDomEl = (this.componentRef.hostView as EmbeddedViewRef<any>)
       .rootNodes[0] as HTMLElement;
